@@ -51,17 +51,17 @@ gulp.task("watch", function () {
 });
 
 //服务
-gulp.task('server',["watch"], function() {
+gulp.task('server',['less','js','images'], function() {
     var files = [
         './app/**/*.html',
-        './app/less/**/*.less',
+        './app/css/**/*.css',
         './app/images/**/*',
-        './app/scripts/**/*.js'
+        './app/js/**/*.js'
     ];
-    // gulp.watch('app/less/**/*.less',["less"]);
-    // gulp.watch(['app/scripts/**/*.js'],["js"]);
-    // gulp.watch('app/images/!**/*', ['images']);
-    gulp.watch(files,['less','js','images']).on("change",browserSync.reload);
+    gulp.watch('app/less/**/*.less',["less"]);
+    gulp.watch(['app/scripts/**/*.js'],["js"]);
+    gulp.watch('app/images/**/*', ['images']);
+    gulp.watch(files).on("change",browserSync.reload);
 
     browserSync.init(files,{
          proxy: "http://localhost:63342/template/app/"
