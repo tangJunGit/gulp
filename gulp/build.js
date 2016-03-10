@@ -64,7 +64,7 @@ gulp.task('server',['less','js','images'], function() {
     gulp.watch(files).on("change",browserSync.reload);
 
     browserSync.init(files,{
-         proxy: "http://localhost:63342/template/app/"
+         proxy: "http://localhost:63342/gulp/app/"
 
     });
 
