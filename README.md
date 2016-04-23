@@ -1,5 +1,5 @@
 # gulp
-安装gulp、bower最好安装到全局上，在此之前node也要配置在全局上
+安装gulp、bower最好安装到全局上，在运行一下命令前，node环境也需要配置全局变量NODE-PATH
 
     $ npm install gulp -g
     $ npm install bower -g
