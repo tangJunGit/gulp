@@ -5,12 +5,12 @@
     $ npm install gulp -g
     $ npm install bower -g
 
-初始化项目, `run`:
+**初始化项目**
 
     $ npm install
     $ bower install
 
-`gulp run`:
+**启动服务**
 
     $ gulp server
 
