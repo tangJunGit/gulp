@@ -25,12 +25,12 @@ gulp插件：
 `browser-sync`,
 `require-dir`
 
-**安装依赖包**
+**1.安装依赖包**
 ```
 $ npm install
 $ bower install
 ```
-**启动服务**
+**2.启动服务**
 ```
 $ gulp server
 ```
