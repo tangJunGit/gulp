@@ -7,7 +7,7 @@ $ npm install gulp -g
 $ npm install bower -g
 ```
 
-**gulp插件**
+gulp插件：
 
 `gulp`,
 `gulp-autoprefixer`,
